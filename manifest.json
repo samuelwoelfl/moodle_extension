@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "moodle extension",
+  "version": "0.0.1",
+  "description": "moodle schick",
+
+  "content_scripts": [{
+   "css": ["new_style.css"],
+   "js": ["jquery.js", "content.js"],
+   "matches": ["https://e-learning.hdm-stuttgart.de/*"]
+  }],
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "moodle_logo.png"
+  }
+}
