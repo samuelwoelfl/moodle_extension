@@ -128,7 +128,6 @@ var all_activities = $(".activityinstance").map(function() {return this;}).get()
 
 jQuery.each( all_activities, function(i, val) {
   var href = $(val).children(".aalink").eq(0).attr('href');
-  console.log(href);
   if (href.includes("https://e-learning.hdm-stuttgart.de/moodle/mod/assign")) {
     $(this).addClass("abgabe");
   } else if (href.includes("https://e-learning.hdm-stuttgart.de/moodle/mod/url")) {

@@ -7,7 +7,7 @@
 
   "content_scripts": [{
    "css": ["new_style.css"],
-   "js": ["jquery.js", "content.js"],
+   "js": ["jquery.js", "scrollTo.js", "localScroll.js", "smooth_scroll.js", "content.js"],
    "matches": ["https://e-learning.hdm-stuttgart.de/*"]
   }],
 
