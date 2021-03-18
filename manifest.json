@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "moodle extension",
-  "version": "0.0.1",
-  "description": "moodle schick",
+  "name": "Moodle Extension",
+  "version": "0.0.2",
+  "description": "Moodle schick",
 
   "content_scripts": [{
    "css": ["new_style.css"],
