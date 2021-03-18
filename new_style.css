@@ -23,7 +23,7 @@ body {
 }
 
 #page-content a:not(.dropdown-item), .d-sm-flex a:not(.dropdown-item) {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 h3.sectionname a {

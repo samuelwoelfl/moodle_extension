@@ -39,10 +39,20 @@ jQuery.each(all_nav_items, function(i, val) {
     val.innerHTML = 'Interfacedesign'
   } else if (val.innerHTML === 'ID7_burmester-Interact') {
     val.innerHTML = 'Interaktionsdesign'
-  } else if (val.innerHTML === '334011a Typografie&Layout SS21') {
+  } else if (val.innerHTML.includes('334011a')) {
     val.innerHTML = 'Typografie & Layout'
-  } else if (val.innerHTML === 'Neuen Kurs beantragen (Lehrende)') {
-    val.innerHTML = 'Kurs beantragen (Lehrende)'
+  } else if (val.innerHTML === 'ID7_WebdesignContent') {
+    val.innerHTML = 'Webdesign Content'
+  } else if (val.innerHTML === 'ID7_TextG_2') {
+    val.innerHTML = 'Textgestaltung'
+  } else if (val.innerHTML === 'Fak3_Portfolio_neu') {
+    val.innerHTML = 'Schlüsselkompetenzen'
+  } else if (val.innerHTML === 'DL2_S221') {
+    val.innerHTML = 'DataLiteracy 2'
+  } else if (val.innerHTML === 'WPM_Fak3') {
+    val.innerHTML = 'Wahlangebote'
+  } else if (val.innerHTML === 'ISE') {
+    val.innerHTML = 'Intercultural Skills'
   }
 });
 
@@ -62,56 +72,56 @@ $(".coursesearchbox button.btn").addClass("searchbutton");
 // ---------------------------------------------------- Change the Icons -------------------------------------------------------------------------------
 
 // page is similar to material
-var all_annoucement_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/forum/1605893337/icon']").map(function() {
+var all_annoucement_icons = $("img[src*='forum']").map(function() {
   return this;
 }).get();
-var all_link_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/url/1605893337/icon']").map(function() {
+var all_link_icons = $("img[src*='url']").map(function() {
   return this;
 }).get();
-var all_pdf_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/core/1605893337/f/pdf-24']").map(function() {
+var all_pdf_icons = $("img[src*='pdf-24']").map(function() {
   return this;
 }).get();
-var all_video_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/core/1605893337/f/mpeg-24']").map(function() {
+var all_video_icons = $("img[src*='mpeg-24']").map(function() {
   return this;
 }).get();
-var all_audio_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/core/1605893337/f/mp3-24']").map(function() {
+var all_audio_icons = $("img[src*='mp3-24']").map(function() {
   return this;
 }).get();
-var all_aufgabe_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/assign/1605893337/icon']").map(function() {
+var all_aufgabe_icons = $("img[src*='assign']").map(function() {
   return this;
 }).get();
-var all_page_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/page/1605893337/icon']").map(function() {
+var all_page_icons = $("img[src*='page']").map(function() {
   return this;
 }).get();
-var all_settings_page_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/core/1605893337/f/sourcecode-24']").map(function() {
+var all_settings_page_icons = $("img[src*='sourcecode-24']").map(function() {
   return this;
 }).get();
-var all_glossary_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/glossary/1605893337/icon']").map(function() {
+var all_glossary_icons = $("img[src*='glossary']").map(function() {
   return this;
 }).get();
-// var all_forum_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/forum/1605893337/icon']").map(function() {return this;}).get();
-var all_umfrage_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/questionnaire/1605893337/icon']").map(function() {
+// var all_forum_icons = $("img[src*='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/forum/1605893337/icon']").map(function() {return this;}).get();
+var all_umfrage_icons = $("img[src*='questionnaire']").map(function() {
   return this;
 }).get();
-var all_image_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/core/1605893337/f/jpeg-24']").map(function() {
+var all_image_icons = $("img[src*='jpeg-24']").map(function() {
   return this;
 }).get();
-var all_zip_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/core/1605893337/f/archive-24']").map(function() {
+var all_zip_icons = $("img[src*='archive-24']").map(function() {
   return this;
 }).get();
-var all_folder_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/folder/1605893337/icon']").map(function() {
+var all_folder_icons = $("img[src*='folder']").map(function() {
   return this;
 }).get();
-var all_settings_file_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/core/1605893337/f/png-24']").map(function() {
+var all_settings_file_icons = $("img[src*='png-24']").map(function() {
   return this;
 }).get();
-var all_unknown_file_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/core/1605893337/f/unknown-24']").map(function() {
+var all_unknown_file_icons = $("img[src*='unknown-24']").map(function() {
   return this;
 }).get();
-var all_word_file_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/core/1605893337/f/document-24']").map(function() {
+var all_word_file_icons = $("img[src*='document-24']").map(function() {
   return this;
 }).get();
-var all_illustrator_file_icons = $("img[src$='https://e-learning.hdm-stuttgart.de/moodle/theme/image.php/boost/core/1605893337/f/eps-24']").map(function() {
+var all_illustrator_file_icons = $("img[src*='eps-24']").map(function() {
   return this;
 }).get();
 
