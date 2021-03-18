@@ -26,6 +26,10 @@ body {
   color: var(--primary) !important;
 }
 
+.pagination-sm .page-item.active a {
+  color: #fff !important;
+}
+
 h3.sectionname a {
   color: #222 !important;
 }
