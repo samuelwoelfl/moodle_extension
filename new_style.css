@@ -23,11 +23,7 @@ body {
 }
 
 #page-content a:not(.dropdown-item), .d-sm-flex a:not(.dropdown-item) {
-  color: var(--primary) !important;
-}
-
-.pagination-sm .page-item.active a {
-  color: #fff !important;
+  color: var(--primary);
 }
 
 h3.sectionname a {
@@ -178,7 +174,7 @@ h5 {
   font-weight: 450 !important;
 }
 
-h1:after {
+h1:not(.h2):after {
   content: " ";
   display: block;
   visibility: visible;
@@ -635,4 +631,16 @@ textarea.form-control {
 [data-region=right-hand-drawer].drawer {
   top: 64px !important;
   height: calc(100% - 64px) !important;
+}
+
+.pagination-sm .page-item.active a {
+  color: #fff !important;
+}
+
+li.initialbarall.page-item.active a {
+  color: #fff !important;
+}
+
+#action-menu-2-menu div.dropdown-item a {
+  color: var(--primary) !important;
 }
