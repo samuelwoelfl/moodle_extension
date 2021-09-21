@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Moodle Extension",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Moodle schick",
 
   "content_scripts": [{
