@@ -1,60 +1,90 @@
-var all_nav_items = $(".media-body ").map(function() {
-  return this;
-}).get();
+// var all_nav_items = $(".media-body ").map(function() {
+//   return this;
+// }).get();
+//
+// jQuery.each(all_nav_items, function(i, val) {
+//   if (val.innerHTML === 'Komm_Fak_Iuk') {
+//     val.innerHTML = 'KPL Fakultät Iuk'
+//   } else if (val.innerHTML === 'ID7_Jg-2020-Winter') {
+//     val.innerHTML = 'ID7 WS 2020'
+//   } else if (val.innerHTML === 'ID_Studierende') {
+//     val.innerHTML = 'ID Studiengang'
+//   } else if (val.innerHTML === 'ID7-Freischwimmer') {
+//     val.innerHTML = 'ID7 Freischwimmer'
+//   } else if (val.innerHTML === 'IDB-WS_HCI') {
+//     val.innerHTML = 'HCI'
+//   } else if (val.innerHTML === 'ThemenID_WS2021') {
+//     val.innerHTML = 'Thema. Grundlagen ID'
+//   } else if (val.innerHTML === 'ÜbungSS2021') {
+//     val.innerHTML = 'Übung Psych. & Design'
+//   } else if (val.innerHTML === 'KommWS_WS2021') {
+//     val.innerHTML = 'Kommun. Workshop'
+//   } else if (val.innerHTML === 'InfoPsych_WS2021') {
+//     val.innerHTML = 'Infopsychologie'
+//   } else if (val.innerHTML === 'ID7_Schreiben_2') {
+//     val.innerHTML = 'Profess. Schreiben'
+//   } else if (val.innerHTML === 'ID7_Darstellungstechnik_ws20_21') {
+//     val.innerHTML = 'DT Digital'
+//   } else if (val.innerHTML === 'ID7 MMD') {
+//     val.innerHTML = 'Multimedia Didaktik'
+//   } else if (val.innerHTML === ' ID7_WS20-DT_haendisch') {
+//     val.innerHTML = 'DT Händisch'
+//   } else if (val.innerHTML === 'DL1_WS2021') {
+//     val.innerHTML = 'DataLiteracy 1'
+//   } else if (val.innerHTML === 'Neuen Kurs beantragen (Lehrende)') {
+//     val.innerHTML = 'Kurs beantragen (Lehrende)'
+//   } else if (val.innerHTML === '334009_Bildgestaltung_SS21') {
+//     val.innerHTML = 'Bildgestaltung'
+//   } else if (val.innerHTML === '334012a_Interfacedesign_SS21') {
+//     val.innerHTML = 'Interfacedesign'
+//   } else if (val.innerHTML === 'ID7_burmester-Interact') {
+//     val.innerHTML = 'Interaktionsdesign'
+//   } else if (val.innerHTML.includes('334011a')) {
+//     val.innerHTML = 'Typografie & Layout'
+//   } else if (val.innerHTML === 'ID7_WebdesignContent') {
+//     val.innerHTML = 'Webdesign Content'
+//   } else if (val.innerHTML === 'ID7_TextG_2') {
+//     val.innerHTML = 'Textgestaltung'
+//   } else if (val.innerHTML === 'Fak3_Portfolio_neu') {
+//     val.innerHTML = 'Schlüsselkompetenzen'
+//   } else if (val.innerHTML === 'DL2_S221') {
+//     val.innerHTML = 'DataLiteracy 2'
+//   } else if (val.innerHTML === 'WPM_Fak3') {
+//     val.innerHTML = 'Wahlangebote'
+//   } else if (val.innerHTML === 'ISE') {
+//     val.innerHTML = 'Intercultural Skills'
+//   }
+// });
 
-jQuery.each(all_nav_items, function(i, val) {
-  if (val.innerHTML === 'Komm_Fak_Iuk') {
-    val.innerHTML = 'KPL Fakultät Iuk'
-  } else if (val.innerHTML === 'ID7_Jg-2020-Winter') {
-    val.innerHTML = 'ID7 WS 2020'
-  } else if (val.innerHTML === 'ID_Studierende') {
-    val.innerHTML = 'ID Studiengang'
-  } else if (val.innerHTML === 'ID7-Freischwimmer') {
-    val.innerHTML = 'ID7 Freischwimmer'
-  } else if (val.innerHTML === 'IDB-WS_HCI') {
-    val.innerHTML = 'HCI'
-  } else if (val.innerHTML === 'ThemenID_WS2021') {
-    val.innerHTML = 'Thema. Grundlagen ID'
-  } else if (val.innerHTML === 'ÜbungSS2021') {
-    val.innerHTML = 'Übung Psych. & Design'
-  } else if (val.innerHTML === 'KommWS_WS2021') {
-    val.innerHTML = 'Kommun. Workshop'
-  } else if (val.innerHTML === 'InfoPsych_WS2021') {
-    val.innerHTML = 'Infopsychologie'
-  } else if (val.innerHTML === 'ID7_Schreiben_2') {
-    val.innerHTML = 'Profess. Schreiben'
-  } else if (val.innerHTML === 'ID7_Darstellungstechnik_ws20_21') {
-    val.innerHTML = 'DT Digital'
-  } else if (val.innerHTML === 'ID7 MMD') {
-    val.innerHTML = 'Multimedia Didaktik'
-  } else if (val.innerHTML === ' ID7_WS20-DT_haendisch') {
-    val.innerHTML = 'DT Händisch'
-  } else if (val.innerHTML === 'DL1_WS2021') {
-    val.innerHTML = 'DataLiteracy 1'
-  } else if (val.innerHTML === 'Neuen Kurs beantragen (Lehrende)') {
-    val.innerHTML = 'Kurs beantragen (Lehrende)'
-  } else if (val.innerHTML === '334009_Bildgestaltung_SS21') {
-    val.innerHTML = 'Bildgestaltung'
-  } else if (val.innerHTML === '334012a_Interfacedesign_SS21') {
-    val.innerHTML = 'Interfacedesign'
-  } else if (val.innerHTML === 'ID7_burmester-Interact') {
-    val.innerHTML = 'Interaktionsdesign'
-  } else if (val.innerHTML.includes('334011a')) {
-    val.innerHTML = 'Typografie & Layout'
-  } else if (val.innerHTML === 'ID7_WebdesignContent') {
-    val.innerHTML = 'Webdesign Content'
-  } else if (val.innerHTML === 'ID7_TextG_2') {
-    val.innerHTML = 'Textgestaltung'
-  } else if (val.innerHTML === 'Fak3_Portfolio_neu') {
-    val.innerHTML = 'Schlüsselkompetenzen'
-  } else if (val.innerHTML === 'DL2_S221') {
-    val.innerHTML = 'DataLiteracy 2'
-  } else if (val.innerHTML === 'WPM_Fak3') {
-    val.innerHTML = 'Wahlangebote'
-  } else if (val.innerHTML === 'ISE') {
-    val.innerHTML = 'Intercultural Skills'
-  }
-});
+document.body.innerHTML = document.body.innerHTML.replace(/Komm_Fak_Iuk/g, 'KPL Fakultät Iuk');
+document.body.innerHTML = document.body.innerHTML.replace(/ID7_Jg-2020-Winter/g, 'ID7 WS 2020');
+document.body.innerHTML = document.body.innerHTML.replace(/ID_Studierende/g, 'ID Studiengang');
+document.body.innerHTML = document.body.innerHTML.replace(/ID7-Freischwimmer/g, 'ID7 Freischwimmer');
+document.body.innerHTML = document.body.innerHTML.replace(/IDB-WS_HCI/g, 'HCI');
+document.body.innerHTML = document.body.innerHTML.replace(/ThemenID_WS2021/g, 'Thema. Grundlagen ID');
+document.body.innerHTML = document.body.innerHTML.replace(/ÜbungSS2021/g, 'Übung Psych. & Design');
+document.body.innerHTML = document.body.innerHTML.replace(/KommWS_WS2021/g, 'Kommun. Workshop');
+document.body.innerHTML = document.body.innerHTML.replace(/InfoPsych_WS2021/g, 'Infopsychologie');
+document.body.innerHTML = document.body.innerHTML.replace(/ID7_Schreiben_2/g, 'Profess. Schreiben');
+document.body.innerHTML = document.body.innerHTML.replace(/ID7_Darstellungstechnik_ws20_21/g, 'DT Digital');
+document.body.innerHTML = document.body.innerHTML.replace(/ID7 MMD/g, 'Multimedia Didaktik');
+document.body.innerHTML = document.body.innerHTML.replace(/ ID7_WS20-DT_haendisch/g, 'DT Händisch');
+document.body.innerHTML = document.body.innerHTML.replace(/DL1_WS2021/g, 'DataLiteracy 1');
+document.body.innerHTML = document.body.innerHTML.replace(/334009_Bildgestaltung_SS21/g, 'Bildgestaltung');
+document.body.innerHTML = document.body.innerHTML.replace(/334012a_Interfacedesign_SS21/g, 'Interfacedesign');
+document.body.innerHTML = document.body.innerHTML.replace(/ID7_burmester-Interact/g, 'Interaktionsdesign');
+document.body.innerHTML = document.body.innerHTML.replace(/334011a Typografie&Layout SS21/g, 'Typografie & Layout');
+document.body.innerHTML = document.body.innerHTML.replace(/ID7_WebdesignContent/g, 'Webdesign Content');
+document.body.innerHTML = document.body.innerHTML.replace(/ID7_TextG_2/g, 'Textgestaltung');
+document.body.innerHTML = document.body.innerHTML.replace(/Fak3_Portfolio_neu/g, 'Schlüsselkompetenzen');
+document.body.innerHTML = document.body.innerHTML.replace(/DL2_S221/g, 'DataLiteracy 2');
+document.body.innerHTML = document.body.innerHTML.replace(/WPM_Fak3/g, 'Wahlangebote Fak. 3');
+document.body.innerHTML = document.body.innerHTML.replace(/ISE/g, 'Intercultural Skills');
+
+document.body.innerHTML = document.body.innerHTML.replace(/ID7_334015-Kommunikationsdesign-WS21_22/g, 'Kommunikationsdesign');
+document.body.innerHTML = document.body.innerHTML.replace(/ID7_WebdesignUI/g, 'Webdesign (UI)');
+document.body.innerHTML = document.body.innerHTML.replace(/Projektmanagement-Abt-WiSe21/g, 'Projektmanagement');
+
 
 
 $(".navbar")[0].style.cssText = 'background-color: #ffffffaa !important;';
