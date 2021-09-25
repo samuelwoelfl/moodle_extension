@@ -56,34 +56,43 @@
 //   }
 // });
 
-document.body.innerHTML = document.body.innerHTML.replace(/Komm_Fak_Iuk/g, 'KPL Fakultät Iuk');
-document.body.innerHTML = document.body.innerHTML.replace(/ID7_Jg-2020-Winter/g, 'ID7 WS 2020');
-document.body.innerHTML = document.body.innerHTML.replace(/ID_Studierende/g, 'ID Studiengang');
-document.body.innerHTML = document.body.innerHTML.replace(/ID7-Freischwimmer/g, 'ID7 Freischwimmer');
-document.body.innerHTML = document.body.innerHTML.replace(/IDB-WS_HCI/g, 'HCI');
-document.body.innerHTML = document.body.innerHTML.replace(/ThemenID_WS2021/g, 'Thema. Grundlagen ID');
-document.body.innerHTML = document.body.innerHTML.replace(/ÜbungSS2021/g, 'Übung Psych. & Design');
-document.body.innerHTML = document.body.innerHTML.replace(/KommWS_WS2021/g, 'Kommun. Workshop');
-document.body.innerHTML = document.body.innerHTML.replace(/InfoPsych_WS2021/g, 'Infopsychologie');
-document.body.innerHTML = document.body.innerHTML.replace(/ID7_Schreiben_2/g, 'Profess. Schreiben');
-document.body.innerHTML = document.body.innerHTML.replace(/ID7_Darstellungstechnik_ws20_21/g, 'DT Digital');
-document.body.innerHTML = document.body.innerHTML.replace(/ID7 MMD/g, 'Multimedia Didaktik');
-document.body.innerHTML = document.body.innerHTML.replace(/ ID7_WS20-DT_haendisch/g, 'DT Händisch');
-document.body.innerHTML = document.body.innerHTML.replace(/DL1_WS2021/g, 'DataLiteracy 1');
-document.body.innerHTML = document.body.innerHTML.replace(/334009_Bildgestaltung_SS21/g, 'Bildgestaltung');
-document.body.innerHTML = document.body.innerHTML.replace(/334012a_Interfacedesign_SS21/g, 'Interfacedesign');
-document.body.innerHTML = document.body.innerHTML.replace(/ID7_burmester-Interact/g, 'Interaktionsdesign');
-document.body.innerHTML = document.body.innerHTML.replace(/334011a Typografie&Layout SS21/g, 'Typografie & Layout');
-document.body.innerHTML = document.body.innerHTML.replace(/ID7_WebdesignContent/g, 'Webdesign Content');
-document.body.innerHTML = document.body.innerHTML.replace(/ID7_TextG_2/g, 'Textgestaltung');
-document.body.innerHTML = document.body.innerHTML.replace(/Fak3_Portfolio_neu/g, 'Schlüsselkompetenzen');
-document.body.innerHTML = document.body.innerHTML.replace(/DL2_S221/g, 'DataLiteracy 2');
-document.body.innerHTML = document.body.innerHTML.replace(/WPM_Fak3/g, 'Wahlangebote Fak. 3');
-document.body.innerHTML = document.body.innerHTML.replace(/ISE/g, 'Intercultural Skills');
+// console.log(window.location.href);
+// console.log(window.location.href.includes("pdf"));
 
-document.body.innerHTML = document.body.innerHTML.replace(/ID7_334015-Kommunikationsdesign-WS21_22/g, 'Kommunikationsdesign');
-document.body.innerHTML = document.body.innerHTML.replace(/ID7_WebdesignUI/g, 'Webdesign (UI)');
-document.body.innerHTML = document.body.innerHTML.replace(/Projektmanagement-Abt-WiSe21/g, 'Projektmanagement');
+if (window.location.href.includes("pdf")) {
+
+} else {
+  document.body.innerHTML = document.body.innerHTML.replace(/Komm_Fak_Iuk/g, 'KPL Fakultät Iuk');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7_Jg-2020-Winter/g, 'ID7 WS 2020');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID_Studierende/g, 'ID Studiengang');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7-Freischwimmer/g, 'ID7 Freischwimmer');
+  document.body.innerHTML = document.body.innerHTML.replace(/IDB-WS_HCI/g, 'HCI');
+  document.body.innerHTML = document.body.innerHTML.replace(/ThemenID_WS2021/g, 'Thema. Grundlagen ID');
+  document.body.innerHTML = document.body.innerHTML.replace(/ÜbungSS2021/g, 'Übung Psych. & Design');
+  document.body.innerHTML = document.body.innerHTML.replace(/KommWS_WS2021/g, 'Kommun. Workshop');
+  document.body.innerHTML = document.body.innerHTML.replace(/InfoPsych_WS2021/g, 'Infopsychologie');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7_Schreiben_2/g, 'Profess. Schreiben');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7_Darstellungstechnik_ws20_21/g, 'DT Digital');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7 MMD/g, 'Multimedia Didaktik');
+  document.body.innerHTML = document.body.innerHTML.replace(/ ID7_WS20-DT_haendisch/g, 'DT Händisch');
+  document.body.innerHTML = document.body.innerHTML.replace(/DL1_WS2021/g, 'DataLiteracy 1');
+  document.body.innerHTML = document.body.innerHTML.replace(/334009_Bildgestaltung_SS21/g, 'Bildgestaltung');
+  document.body.innerHTML = document.body.innerHTML.replace(/334012a_Interfacedesign_SS21/g, 'Interfacedesign');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7_burmester-Interact/g, 'Interaktionsdesign');
+  document.body.innerHTML = document.body.innerHTML.replace(/334011a Typografie&Layout SS21/g, 'Typografie & Layout');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7_WebdesignContent/g, 'Webdesign Content');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7_TextG_2/g, 'Textgestaltung');
+  document.body.innerHTML = document.body.innerHTML.replace(/Fak3_Portfolio_neu/g, 'Schlüsselkompetenzen');
+  document.body.innerHTML = document.body.innerHTML.replace(/DL2_S221/g, 'DataLiteracy 2');
+  document.body.innerHTML = document.body.innerHTML.replace(/WPM_Fak3/g, 'Wahlangebote Fak. 3');
+  document.body.innerHTML = document.body.innerHTML.replace(/ISE/g, 'Intercultural Skills');
+
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7_334015-Kommunikationsdesign-WS21_22/g, 'Kommunikationsdesign');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7_WebdesignUI/g, 'Webdesign (UI)');
+  document.body.innerHTML = document.body.innerHTML.replace(/Projektmanagement-Abt-WiSe21/g, 'Projektmanagement');
+  document.body.innerHTML = document.body.innerHTML.replace(/ID7-HCI_Methods-21/g, 'HCI Methods');
+}
+
 
 
 
